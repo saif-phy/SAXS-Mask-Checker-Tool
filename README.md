@@ -61,7 +61,8 @@ Verifying detector gap masks.
 Interactive quality control of preprocessing pipelines for SAXS/WAXS.
 
 📸 Screenshots
-[screenshot.png](https://github.com/saif-phy/SAXS-Mask-Checker-Tool/blob/1bad3a3b9dbf69d4e9219ac0ac9c90c4e699b3cc/screenshot.png)
+
+![screenshot.png](https://github.com/saif-phy/SAXS-Mask-Checker-Tool/blob/1bad3a3b9dbf69d4e9219ac0ac9c90c4e699b3cc/screenshot.png)
 
 📄 License
 This project is open source and available under the MIT License.
