@@ -1,4 +1,5 @@
-#SAXS Mask Checking Tool
+# SAXS Mask Checking Tool
+
 This repository contains a graphical user interface (GUI) built with Python and Tkinter for interactively inspecting and verifying masks for 2D SAXS/WAXS data.
 
 The tool allows a user to load both a raw data file and its corresponding mask file. It provides a visual interface to slide through the data and see a 1D profile of both the data intensity and the mask values, making it easy to confirm if artifacts (like beamstops or detector gaps) are correctly covered by the mask.
