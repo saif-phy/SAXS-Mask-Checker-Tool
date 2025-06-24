@@ -1,62 +1,71 @@
 # SAXS Mask Checking Tool
 
-This repository contains a graphical user interface (GUI) built with Python and Tkinter for interactively inspecting and verifying masks for 2D SAXS/WAXS data.
+A Python-based GUI application for visualizing and comparing Small-Angle X-ray Scattering (SAXS) data with its corresponding mask image. Built with tkinter, matplotlib, and PIL, this tool allows users to interactively inspect SAXS .tif images and verify the accuracy of their binary masks by analyzing pixel-level intensity profiles.
 
-The tool allows a user to load both a raw data file and its corresponding mask file. It provides a visual interface to slide through the data and see a 1D profile of both the data intensity and the mask values, making it easy to confirm if artifacts (like beamstops or detector gaps) are correctly covered by the mask.
+🧰 Features
+📂 Load SAXS data and mask .tif files.
 
-Key Features
-Interactive GUI: A user-friendly interface for visual inspection.
+🎚️ Interactive sliders to examine data row-by-row or column-by-column.
 
-File Loading: Buttons to easily load SAXS data and mask files (.tif format).
+🔁 Toggle between X and Y axis for fixed profile view.
 
-Linked Image and Profile Views: Displays the 2D SAXS image alongside a 1D intensity profile plot.
+📈 Real-time intensity profile plot with normalized data and mask curves.
 
-Interactive Sliders: Sliders for both X and Y axes allow the user to select a specific row or column to inspect.
+🔎 Zoom and pan controls powered by Matplotlib's toolbar.
 
-Switchable Profile Axis: Radio buttons let you instantly switch between viewing a vertical (fixed X) or horizontal (fixed Y) intensity profile.
+🧪 Designed for quick inspection and validation of beamstop or gap masks.
 
-Normalized Overlay: The profile plot shows the normalized data intensity and the mask values overlaid, making it easy to see where the mask is active relative to data features.
+📷 GUI Overview
+Left Panel: SAXS image loaded from .tif file.
 
-How to Use the Tool
-Launch the application.
+Right Panel: Corresponding intensity profile along selected axis.
 
-Click "Load SAXS Data (.tif)" and select your 2D scattering data file. The image will appear in the left panel.
+Controls:
 
-Click "Load Mask (.tif)" and select the corresponding mask file.
+File loaders for data and mask.
 
-Once both are loaded, the intensity profile will appear in the right panel.
+Axis toggle (X or Y).
 
-Use the "X Position" and "Y Position" sliders to move the selection line through the data.
+Sliders to choose specific slice positions.
 
-Use the "Fixed Axis" radio buttons to choose whether you are viewing a vertical slice (fixing the X position) or a horizontal slice (fixing the Y position).
+🚀 Getting Started
+🖥️ Prerequisites
+Install required Python packages:
+pip install numpy matplotlib Pillow
+Note: tkinter comes pre-installed with standard Python distributions.
 
-Analyze the "Intensity Profile" plot on the right. This plot shows how the mask aligns with the features in your data along the selected slice.
+📦 Run the App
+Save the script as saxs_gui.py, then launch it using:
+python saxs_gui.py
+📁 File Requirements
+SAXS Data: 2D grayscale .tif file containing raw SAXS image.
 
-Requirements
-The script requires the following Python libraries:
+Mask File: Binary .tif file (same dimensions) representing masked regions.
 
-tkinter (usually included with standard Python installations)
+📌 Both files must have the same shape and pixel alignment.
 
-numpy
+🛠️ Usage Tips
+Load data first, then the mask.
 
-Pillow (PIL)
+Use the X/Y toggle to fix a direction for slicing.
 
-matplotlib
+Adjust sliders to scan through columns (X) or rows (Y).
 
-You can install the necessary libraries using pip:
+Compare the normalized intensity profile with the mask pattern to validate its coverage.
 
-pip install numpy Pillow matplotlib
+🧪 Example Applications
+Checking beamstop masks for alignment and coverage.
 
-Running the Application
-Clone the repository or save the script to a .py file.
+Verifying detector gap masks.
 
-Open your terminal or command prompt.
+Interactive quality control of preprocessing pipelines for SAXS/WAXS.
 
-Navigate to the directory where you saved the script.
+📸 Screenshots
+[screenshot.png](https://github.com/saif-phy/SAXS-Mask-Checker-Tool/blob/1bad3a3b9dbf69d4e9219ac0ac9c90c4e699b3cc/screenshot.png)
 
-Run the script:
+📄 License
+This project is open source and available under the MIT License.
 
-python your_script_name.py
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+👤 Author
+Developed by saif
+If you find this tool useful, feel free to ⭐ the repo and contribute!
